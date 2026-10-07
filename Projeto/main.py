@@ -44,9 +44,9 @@ def main():
     try:
         missaoCaca.status = StatusMissao.PENDENTE   # O setter deve recusar essa alteração
     except ValueError as erro:                      # Transição de status inválida
-        print(f"Não foi possível alterar o status: {erro}")
+        print(f"Não foi possível alterar os Dados: {erro}\n")
     except TypeError as erro:                       # Valor que não é do enum StatusMissao
-        print(f"Não foi possível alterar o status: {erro}")
+        print(f"Não foi possível alterar os Dados: {erro}\n")
 
 
 main()
