@@ -10,22 +10,22 @@ class Missao:
         self.__recompensa = recompensa            # XP base concedido ao concluir (privado)
         self.__status = StatusMissao.PENDENTE     # Toda missão começa como pendente
 
-    # Getter: permite ler o nome
+    #permite ler o nome
     @property
     def nome(self): 
         return self.__nome
     
-    # Getter: permite ler a descrição
+    #permite ler a descrição
     @property
     def descricao(self): 
         return self.__descricao
     
-    # Getter: permite ler a recompensa base
+    #permite ler a recompensa base
     @property
     def recompensa(self): 
         return self.__recompensa
 
-    # Getter: permite ler o status atual
+    #permite ler o status atual
     @property
     def status(self): 
         return self.__status

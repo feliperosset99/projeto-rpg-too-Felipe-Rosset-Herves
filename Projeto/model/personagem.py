@@ -15,32 +15,32 @@ class Personagem:
     def nivel(self): 
         return self.__nivel
     
-    # Getter: permite ler o xp atual
+    #permite ler o xp atual
     @property
     def xp(self): 
         return self.__xp 
 
-    # Getter: permite ler o nome
+    #permite ler o nome
     @property
     def nome(self):
         return self.__nome
 
-    # Getter: permite ler a vida atual
+    #permite ler a vida atual
     @property
     def vida(self):
         return self.__vida
 
-    # Getter: permite ler a vida máxima
+    #permite ler a vida máxima
     @property
     def vida_maxima(self):
         return self.__vida_maxima
 
-    # Getter: permite ler o ataque
+    #permite ler o ataque
     @property
     def ataque(self):
         return self.__ataque
 
-    # Getter: permite ler a defesa
+    #permite ler a defesa
     @property
     def defesa(self):
         return self.__defesa
@@ -116,7 +116,7 @@ class Personagem:
 
     # Retorna um texto com os dados do personagem
     def exibir_dados(self):
-        # Texto multilinha formatado com os atributos atuais
+        
         msg = f'''
 Nome: {self.nome}
 Vida: {self.vida}

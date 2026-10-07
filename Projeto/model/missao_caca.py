@@ -29,7 +29,7 @@ class MissaoCaca(Missao):
     
     # Sobrescreve exibir_dados para incluir o inimigo
     def exibir_dados(self):
-        # Usa os dados da classe pai e acrescenta o inimigo caçado
+        # Usa os dados da classe e acrescenta o inimigo caçado
         msg = f'''
 Dados da missão de caça:
 {super().exibir_dados()}

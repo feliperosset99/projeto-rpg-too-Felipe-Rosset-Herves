@@ -13,12 +13,12 @@ def main():
     print("\n!!! Começo do Jogo !!!\n")
     print(f"{arqueiro.exibir_dados()}\n")
 
-    # Cria uma missão de cada tipo: nome, descrição, recompensa e o dado específico
+    # Cria uma missão de cada tipo: nome, descrição, recompensa e o que tem que ser feito (inimigo, item ou entrega)
     missaoCaca = MissaoCaca("Caça", "Cace goblins para proteger a vila", 75, TipoInimigo.GOBLIN)
     missaoColeta = MissaoColeta("Coleta", "Colete uma erva medicinal rara", 80, "Erva medicinal")
     missaoEntrega = MissaoEntrega("Entrega", "Entregue uma carta para o rei", 92, "Carta")
 
-    # Guarda as missões em uma lista (polimorfismo: todas são tratadas como Missao)
+    # Guarda as missões em uma lista (polimorfismo)
     listaMissoes = []
     listaMissoes.append(missaoCaca)
     listaMissoes.append(missaoColeta)
@@ -48,5 +48,5 @@ def main():
     except TypeError as erro:                       # Valor que não é do enum StatusMissao
         print(f"Não foi possível alterar o status: {erro}")
 
-# Chama a função principal para iniciar o programa
+
 main()

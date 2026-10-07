@@ -26,7 +26,7 @@ class MissaoColeta(Missao):
     
     # Sobrescreve exibir_dados para incluir o item
     def exibir_dados(self):
-        # Usa os dados da classe pai e acrescenta o item coletado
+        # Usa os dados da classe e acrescenta o item coletado
         msg = f'''
 Dados da missão de coleta:
 {super().exibir_dados()}

@@ -26,7 +26,7 @@ class MissaoEntrega(Missao):
     
     # Sobrescreve exibir_dados para incluir a mercadoria
     def exibir_dados(self):
-        # Usa os dados da classe pai e acrescenta a mercadoria
+        # Usa os dados da classe e acrescenta a mercadoria
         msg = f'''
 Dados da missão de entrega:
 {super().exibir_dados()}
